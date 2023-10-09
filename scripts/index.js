@@ -20,6 +20,10 @@ function addToCart(productName, price, imageUrl) {
 }
 
 // Function to remove an item from the cart
+/**
+ * Removes the last occurrence of a product from the cart and updates the tooltip content.
+ * @param {string} productName - The name of the product to remove from the cart.
+ */
 function removeFromCart(productName) {
     // Assuming you have a cart object
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
